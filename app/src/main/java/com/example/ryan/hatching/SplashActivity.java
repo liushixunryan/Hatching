@@ -22,7 +22,7 @@ public class SplashActivity extends AppCompatActivity {
             handler.postDelayed(runnable,3000);
         }
         else {
-            handler.postDelayed(runnable,0);
+            handler.postDelayed(runnable,3000);
         }
         sharedPreferences.edit().putBoolean("isFirst",false).commit();
     }
