@@ -9,7 +9,7 @@ import android.os.Bundle;
 
 public class SplashActivity extends AppCompatActivity {
 
-    //下载完第一次进入会有3秒的广告,第二次则不会有
+    //下载完第一次进入会有导航页,第二次则不会有
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,10 @@ public class SplashActivity extends AppCompatActivity {
         Boolean isFirst=sharedPreferences.getBoolean("isFirst",true);
 
         if (isFirst){
-            handler.postDelayed(runnable,3000);
+            handler.postDelayed(runnable,600000);
         }
         else {
-            handler.postDelayed(runnable,3000);
+            handler.postDelayed(runnable,0);
         }
         sharedPreferences.edit().putBoolean("isFirst",false).commit();
     }
