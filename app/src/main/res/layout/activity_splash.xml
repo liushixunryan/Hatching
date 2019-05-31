@@ -20,6 +20,7 @@
         android:textSize="40dp" />
 
     <Button
+        android:onClick="tiaozhuan"
         android:layout_width="293dp"
         android:layout_height="41dp"
         android:layout_alignParentBottom="true"

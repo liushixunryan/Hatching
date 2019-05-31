@@ -5,22 +5,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class LoginActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
     }
 
-    public void login(View view) {
-        Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+    public void queren(View view) {
+        Intent intent=new Intent(RegisterActivity.this,InformationActivity.class);
         startActivity(intent);
         finish();
     }
 
-    public void register(View view) {
-        Intent intent=new Intent(LoginActivity.this,RegisterActivity.class);
+    public void login_dengru(View view) {
+        Intent intent=new Intent(RegisterActivity.this,LoginActivity.class);
         startActivity(intent);
         finish();
     }
