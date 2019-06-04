@@ -11,6 +11,7 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
+            android:id="@+id/toolbar"
             android:layout_centerHorizontal="true"
             android:background="#00CCFF"
             android:layout_width="match_parent"
@@ -39,6 +40,21 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp" />
         </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v4.view.ViewPager>
+        </RelativeLayout>
+
+
     </FrameLayout>
     <!--侧滑栏-->
     <android.support.design.widget.NavigationView
@@ -46,11 +62,21 @@
         android:layout_width="240dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="@color/colorPrimary"
+        android:background="#F2F6FC"
         android:paddingTop="50dp"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu">
-
+        <RelativeLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/shezhi"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </RelativeLayout>
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
