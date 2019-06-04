@@ -51,7 +51,7 @@
 
         <EditText
             android:gravity="center"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:textSize="18dp"
             android:hint="请输入昵称"
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
 
         <EditText
             android:gravity="center"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:textSize="18dp"
             android:hint="请输入出生年月"
             android:layout_width="0dp"

@@ -80,7 +80,7 @@
 
         <EditText
             android:gravity="center"
-            android:inputType="textPassword"
+            android:inputType="number"
             android:textSize="18dp"
             android:hint="请输入验证码"
             android:layout_width="0dp"
