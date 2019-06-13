@@ -53,7 +53,7 @@ public class CompanyAdapter extends ArrayAdapter<Company> {
         companynameTv=convertView.findViewById(R.id.companynameTv);
         shengTv=convertView.findViewById(R.id.shengTv);
         shiTv=convertView.findViewById(R.id.shiTv);
-        quTv=convertView.findViewById(R.id.quanzhi);
+        quTv=convertView.findViewById(R.id.quTv);
         idTv=convertView.findViewById(R.id.idTv);
 
         logoImg.setImageResource(companies.get(position).getImageid());
